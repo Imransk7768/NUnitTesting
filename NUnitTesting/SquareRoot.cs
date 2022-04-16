@@ -13,7 +13,7 @@ namespace NUnitTesting
             Console.WriteLine("Enter the Positive Number");
             int num = Convert.ToInt32(Console.ReadLine());
             double root = Math.Sqrt(num);
-            Console.WriteLine("Square root of the " + num + " number is: " + Root);
+            Console.WriteLine("Square root of the " + num + " number is: " + root);
         }
     }
 }
