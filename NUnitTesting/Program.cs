@@ -7,9 +7,9 @@ namespace NUnitTesting
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine(">>>>>>> Welcome to Logical Programs <<<<<<<");
+            Console.WriteLine(">>>>>>> Welcome to NUnit Logical Programs <<<<<<<");
             bool end = true;
-            Console.WriteLine("1. Vending Machine\n2. End Of The Program");
+            Console.WriteLine("1. Vending Machine\n2. Day Of Week\n3. End Of The Program");
             while (end == true)
             {
                 Console.WriteLine("\nEnter an Option to Exicute.");
@@ -21,6 +21,10 @@ namespace NUnitTesting
                         machine.Counting();
                         break;
                     case 2:
+                        DayOfWeek1 day = new DayOfWeek1();
+                        day.WeekDay();
+                        break;
+                    case 3:
                         end = false;
                         Console.WriteLine("Program Is Ended.");
                         break;
