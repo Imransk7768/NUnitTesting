@@ -9,7 +9,7 @@ namespace NUnitTesting
         {
             Console.WriteLine(">>>>>>> Welcome to NUnit Logical Programs <<<<<<<");
             bool end = true;
-            Console.WriteLine("1. Vending Machine\n2. Day Of Week\n3. Temperature\n4. End Of The Program");
+            Console.WriteLine("1. Vending Machine\n2. Day Of Week\n3. Temperature\n4. Monthly Payment\n5. End Of The Program");
             while (end == true)
             {
                 Console.WriteLine("\nEnter an Option to Exicute.");
@@ -30,6 +30,10 @@ namespace NUnitTesting
                         tem.fehrenheitToCelsius();
                         break;
                     case 4:
+                        MonthlyPayment pay = new MonthlyPayment();
+                        pay.Payment();
+                        break;
+                    case 5:
                         end = false;
                         Console.WriteLine("Program Is Ended.");
                         break;
